@@ -1,31 +1,37 @@
-.banner-img{
+.banner-img {
     width: 100%;
-    mask-image: linear-gradient(to right , transparent , black 75%);
-    -webkit-mask-image: linear-gradient(to right , transparent , black 75%);
+    mask-image: linear-gradient(to right, transparent, black 75%);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 75%);
+    overflow: hidden; /* Prevents any overflow issues */
 }
-.hero
-{
+
+.hero {
     position: relative;
+    overflow: hidden; /* Make sure it doesn't affect other content on the page */
 }
-.hero-caption
-{
+
+.hero-caption {
     position: absolute;
     left: 6%;
-    bottom:-10px;
+    bottom: 10px; /* Changed from -10px to 10px to bring it above the content and avoid any overflow */
+    width: 90%; /* Ensure caption stays within the visible width */
 }
-.hero-caption p{
+
+.hero-caption p {
     font-size: 12px;
 }
-.hero-caption .hero-title{
+
+.hero-caption .hero-title {
     width: 90%;
     max-width: 412px;
     margin-bottom: 15px;
 }
-.btn span
-{
+
+.btn span {
     color: black;
 }
-.btn-dark span
-{
+
+.btn-dark span {
     color: #fff;
 }
+

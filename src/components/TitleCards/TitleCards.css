@@ -1,14 +1,24 @@
+
 .Title-cards {
-    width: 100%; 
-    padding: 0 20px; 
+    width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
 }
 
 .cart-list {
     display: flex;
     gap: 10px;
     overflow-x: scroll;
-    white-space: nowrap; 
+    white-space: nowrap;
     scroll-behavior: smooth;
+    padding-bottom: 10px;
+    margin-bottom: 0;
+    box-sizing: border-box;
+    scrollbar-width: thnin;
+}
+
+.cart-list::-webkit-scrollbar {
+    display: none ;
 }
 
 
