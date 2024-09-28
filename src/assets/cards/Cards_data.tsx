@@ -12,8 +12,12 @@ import card_img11 from './card11.jpg';
 import card_img12 from './card12.jpg';
 import card_img13 from './card13.jpg';
 import card_img14 from './card14.jpg';
+type cardData ={
+    image:string,
+    name:string
+}
 
-const cards_data = [
+const cards_data:cardData[] = [
     {
         image:card_img1,
         name:"Kung Fu Panda"

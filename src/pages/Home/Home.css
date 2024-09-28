@@ -1,0 +1,31 @@
+.banner-img{
+    width: 100%;
+    mask-image: linear-gradient(to right , transparent , black 75%);
+    -webkit-mask-image: linear-gradient(to right , transparent , black 75%);
+}
+.hero
+{
+    position: relative;
+}
+.hero-caption
+{
+    position: absolute;
+    left: 6%;
+    bottom:-10px;
+}
+.hero-caption p{
+    font-size: 12px;
+}
+.hero-caption .hero-title{
+    width: 90%;
+    max-width: 412px;
+    margin-bottom: 15px;
+}
+.btn span
+{
+    color: black;
+}
+.btn-dark span
+{
+    color: #fff;
+}
