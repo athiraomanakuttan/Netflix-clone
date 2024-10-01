@@ -4,7 +4,9 @@
     -webkit-mask-image: linear-gradient(to right, transparent, black 75%);
     overflow: hidden; /* Prevents any overflow issues */
 }
-
+.hero-title{
+    width: 60%;
+}
 .hero {
     position: relative;
     overflow: hidden; /* Make sure it doesn't affect other content on the page */
@@ -35,3 +37,30 @@
     color: #fff;
 }
 
+@media(max-width:1024px)
+{
+    .hero-caption .title-card{
+        display: none;
+    }
+    .hero-btns{
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width:520px)
+{
+    .hero-btns{
+        margin-bottom: 5px !important;
+        padding: 0 7px !important;
+    }
+    .button-div{
+        margin-bottom: 0px !important;
+    }
+    .hero-title
+    {
+        width: 40% !important;
+    }
+    .hero-caption p{
+        display: none;
+    }
+}
